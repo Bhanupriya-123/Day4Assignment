@@ -62,14 +62,14 @@ body {
 }
 .search span{
     position: absolute;
-    left: 66em;
+    left: 82em;
     color: #000;
-    padding-top: 6px;
+    padding-top: 10px;
 }
 .search input{
     border-radius: 2rem;
     border: none;
-    padding: 5px 140px 5px 10px;
+    padding: 10px 330px 10px 10px;
     background-color: #f5f5f5;
 }
 .top-navigation{
@@ -79,7 +79,7 @@ body {
 .top-navigation i{
     padding: 15px;
     font-size: 20px;
-    color: #000;
+    color: rgb(236, 27, 114);
 }
 .top-navigation img{
     border-radius: 25px;
@@ -92,11 +92,18 @@ body {
 }
 .content-area{
     display: flex;
-    height: 100rem;
+    height: 105rem;
 }
 .side-navigation{
-    margin-top: 40px;
+    margin-top: 58px;
 } 
+.side-navigation li{
+    font-size: 20px;
+   padding-right: 40px;
+}
+.side-navigation a{
+    font-size: 15px;
+}
 .content-area .side-navigation a{
     padding: 15px;
     display: flex;
@@ -112,7 +119,7 @@ body {
     background-color:var(--color-primary-light);
 }
 .content-area aside{
-    flex: 0 0 20%;
+    flex: 0 0 15%;
     background-color: var(--color-grey-dark-1);
     display: flex;
     justify-content: space-between;
@@ -122,13 +129,13 @@ body {
     flex: 1;
     background-color: var(--color-grey-light-3);
     color: var(--color-grey-dark-1);
-    height: 100rem;
+   
 }
 .content-area .side-footer{
     text-align: center;
 }
 .main-sidebar .hotel-images img{
-  height: 70%;
+  height: 60%;
   width:33.1%;  
 }
 .main-sidebar h1{
@@ -140,30 +147,45 @@ body {
 }
 .location a{
     color:var(--color-primary);
+    font-size: 25px;
+}
+.location u{
     font-size: 15px;
 }
 .main-sidebar .main-top{
     display: flex;
     background-color: #fff;
 }
+.main-top h1{
+    padding-top: 15px;
+}
+
 .main-sidebar .main-top .location{
     display: flex;
-    padding-left: 58rem;
+    padding-left: 54.2rem;
+}
+.square #para6{
+    font-size: 15px;
+    color:#fff
+}
+.square #para7{
+    color:#fff
 }
 .main-sidebar .main-top .location li{
     padding-top: 16px;
     padding-right: 15px;
 }
 .main-sidebar .main-top .star-ratings{
-    padding: 5px 0 0 25px;
+    padding: 20px 0 0 20px;
 }
 .main-sidebar h1{
     padding-left: 20px;
 }
 .main-sidebar .square{
     text-align: center;
-    padding:10px 10px;
+    padding:13px 15px;
     background-color: var(--color-primary);
+    margin-left: 50px;
 }
 .main-sidebar .main-top .location u{
     color:var(--color-primary);
@@ -171,14 +193,16 @@ body {
     padding-top: 16px;
 }
 .hotel-info .summary p{
-    padding: 50px 50px 100px;
+    padding: 50px 50px 50px;
     background-color: #fff;
     font-size: 15px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .hotel-info .summary {
     background-color: #fff;
     margin-top: 50px;
+    margin-left: 40px;
+    padding-bottom: 150px;
 }
 .hotel-info{
     display:flex;
@@ -195,9 +219,8 @@ body {
     display:flex;
 }
 .user-footer .user-images img{
-    border-radius: 100px;
-    width:10%;
-    height: 30%;
+    border-radius: 150px;
+    width: 15%;
 }
 .user-footer .user-images{
   padding-top: 100px;
@@ -205,8 +228,67 @@ body {
 .user-footer .para1{
     font-size: 10px;
 }
-
-
+.details{
+   
+    margin: 50px 0 0 15px;
+    font-size: 13px;  
+}
+.details .details-section1{
+    background-color: #fff;
+    padding: 70px 15px 30px 15px;
+}
+.details .details-section2{
+    background-color: #fff;
+    padding: 50px 10px 30px 10px;
+    margin-top: 20px;
+}
+.side-bar1{
+    display:flex;
+    padding-top: 20px;
+}
+.side-bar1 img{
+    border-radius: 80px;
+    width:60%;
+    height:60%;
+    margin-top: 10px;
+}
+.side-bar1 .para5{
+  color: #eb2f64;
+  font-size: 15px;
+  padding-top: 20px;
+}
+.side-bar2{
+    display:flex;
+    padding-top: 20px;
+}
+.side-bar2 img{
+    border-radius: 80px;
+    width: 60%;
+    height: 65%;
+    margin-top: 10px;
+}
+.side-bar2 .para5{
+  color: #eb2f64;
+  font-size: 15px;
+  padding-top: 20px;
+}
+.end-footer{
+    margin: 80px 0 0 10px;
+    text-align: center;
+}
+#book-now{
+    padding: 20px 0 20px 0;
+    border-radius: 95px;
+    color:#fff;
+    font-size: 15px;
+    background-color: #eb2f64;
+    margin-top: 30px;
+}
+#show-all{
+    color:deeppink;
+    font-size: 15px;
+    padding: 50px;
+}
 @media only screen and (max-width: 400px) {
     .content-area {
        flex-direction: column;

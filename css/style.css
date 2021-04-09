@@ -1,0 +1,229 @@
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    /* 1rem = 10px, 10px/16px = 62.5% */
+    font-size: 62.5%;
+}
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-light-2);
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.logo{
+   
+    padding-left: 10px;
+}
+.header .search{
+    flex: 0 0 40%;
+}
+.search span{
+    position: absolute;
+    left: 66em;
+    color: #000;
+    padding-top: 6px;
+}
+.search input{
+    border-radius: 2rem;
+    border: none;
+    padding: 5px 140px 5px 10px;
+    background-color: #f5f5f5;
+}
+.top-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.top-navigation i{
+    padding: 15px;
+    font-size: 20px;
+    color: #000;
+}
+.top-navigation img{
+    border-radius: 25px;
+}
+.top-navigation #para1{
+    padding-top: 11px;
+    padding-left: 10px;
+    color: #000;
+    font-size: 13px;
+}
+.content-area{
+    display: flex;
+    height: 100rem;
+}
+.side-navigation{
+    margin-top: 40px;
+} 
+.content-area .side-navigation a{
+    padding: 15px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    text-decoration: none;
+    color:#fff;
+}
+.content-area .side-navigation .fa{
+    width: 25px;
+}
+.content-area .side-navigation a:hover{
+    background-color:var(--color-primary-light);
+}
+.content-area aside{
+    flex: 0 0 20%;
+    background-color: var(--color-grey-dark-1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content-area main{
+    flex: 1;
+    background-color: var(--color-grey-light-3);
+    color: var(--color-grey-dark-1);
+    height: 100rem;
+}
+.content-area .side-footer{
+    text-align: center;
+}
+.main-sidebar .hotel-images img{
+  height: 70%;
+  width:33.1%;  
+}
+.main-sidebar h1{
+    font-size: 20px;;
+}
+.main-sidebar .star-ratings a{
+    font-size: 15px;
+    color:var(--color-primary)
+}
+.location a{
+    color:var(--color-primary);
+    font-size: 15px;
+}
+.main-sidebar .main-top{
+    display: flex;
+    background-color: #fff;
+}
+.main-sidebar .main-top .location{
+    display: flex;
+    padding-left: 58rem;
+}
+.main-sidebar .main-top .location li{
+    padding-top: 16px;
+    padding-right: 15px;
+}
+.main-sidebar .main-top .star-ratings{
+    padding: 5px 0 0 25px;
+}
+.main-sidebar h1{
+    padding-left: 20px;
+}
+.main-sidebar .square{
+    text-align: center;
+    padding:10px 10px;
+    background-color: var(--color-primary);
+}
+.main-sidebar .main-top .location u{
+    color:var(--color-primary);
+    padding-right: 10px;
+    padding-top: 16px;
+}
+.hotel-info .summary p{
+    padding: 50px 50px 100px;
+    background-color: #fff;
+    font-size: 15px;
+    margin-top: 50px;
+}
+.hotel-info .summary {
+    background-color: #fff;
+    margin-top: 50px;
+}
+.hotel-info{
+    display:flex;
+}
+.hotel-info .facilities{
+    display: flex;
+    font-size: 15px;
+    padding-left: 50px;
+}
+.hotel-info .facilities-2{
+    padding-left: 30px;
+}
+.user-footer{
+    display:flex;
+}
+.user-footer .user-images img{
+    border-radius: 100px;
+    width:10%;
+    height: 30%;
+}
+.user-footer .user-images{
+  padding-top: 100px;
+}
+.user-footer .para1{
+    font-size: 10px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .content-area {
+       flex-direction: column;
+    }
+.content-area .side-footer{
+    display: none;
+}
+.header{
+    flex-wrap: wrap;
+}
+.header .search{
+    flex: 0 0 100%;
+    order: 1;
+}
+.logo{
+    padding: 2rem;
+}
+.search{
+    flex: 0 0 100%;
+}
